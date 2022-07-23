@@ -12,6 +12,7 @@ function App() {
 
     useEffect(() => {
         if (localStorage.getItem('auth')) {
+            console.log('useEffect')
             setIsAuth(true)
         }
         setLoading(false);
